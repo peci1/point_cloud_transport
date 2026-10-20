@@ -25,10 +25,11 @@
 
   <depend>point_cloud_transport</depend>
   <depend>pluginlib</depend>
+  <depend>rcl</depend>
   <depend>rclcpp</depend>
+  <depend>rclpy</depend>
   <depend>sensor_msgs</depend>
 
-  <exec_depend>rclpy</exec_depend>
   <exec_depend>rpyutils</exec_depend>
 
   <test_depend>ament_cmake_pytest</test_depend>

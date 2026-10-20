@@ -15,7 +15,9 @@ find_package(ament_cmake_python REQUIRED)
 find_package(ament_cmake_ros REQUIRED)
 find_package(point_cloud_transport REQUIRED)
 find_package(pluginlib REQUIRED)
+find_package(rcl REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclpy REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 # By default, without the settings below, find_package(Python3) will attempt
@@ -45,6 +47,7 @@ pybind11_add_module(_point_cloud_transport SHARED
 )
 target_link_libraries(_point_cloud_transport PUBLIC
   point_cloud_transport::point_cloud_transport
+  rcl::rcl
   rclcpp::rclcpp
   sensor_msgs::sensor_msgs
 )
